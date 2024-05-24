@@ -62,8 +62,6 @@ FROM temp_names tn
 WHERE fn.name = tn.full_name;
 
 
-
-```bash
 UPDATE full_names fn
 SET status = (
     SELECT sn.status
