@@ -34,6 +34,11 @@ API предоставляет следующие конечные точки:
 Пример использования:
 ```bash
   curl -X POST -H "Content-Type: application/json" -d '{"phone": "1234567890", "address": "address123"}' http://localhost/write_data
+
+  curl -X PATCH -H "Content-Type: application/json" -d '{"phone": "1234567890", "address": "new_address"}' http://localhost/write_data
+
+  curl http://localhost/check_data?phone=1234567890
+
 ```
 
 ## Дополнительная информация
